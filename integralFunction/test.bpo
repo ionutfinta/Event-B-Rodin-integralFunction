@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="integral" org.eventb.core.type="ℙ(ℙ(ℤ×ℤ)×ℤ)"/>
+<org.eventb.core.poPredicate name="integram" org.eventb.core.predicate="integral∈(ℤ ⇸ ℤ) → ℤ∧integral=(λx⦂ℙ(ℤ×ℤ)·x=(∅ ⦂ ℙ(ℤ×ℤ)) ∣ 0)∪(λx⦂ℙ(ℤ×ℤ)·x∈ℤ ⇸ ℤ∧finite(x)∧card(x)&gt;0∧finite(dom(x)) ∣ integral(x ∖ {max(dom(x)) ↦ x(max(dom(x)))})+x(max(dom(x))))" org.eventb.core.source="/integralFunction/integral_ctx.buc|org.eventb.core.contextFile#integral_ctx|org.eventb.core.axiom#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/integralFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="total" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="var1" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/integralFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#EVTALLHYPintegral_ct{"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{1 ↦ 5,2 ↦ −5,3 ↦ 5,−4 ↦ −2}∈ℤ ⇸ ℤ" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.invariant#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.invariant#)"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/integralFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/integralFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/integralFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTintegral_ct{" org.eventb.core.parentSet="/integralFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="total'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="var1'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPintegral_ct{" org.eventb.core.parentSet="/integralFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#EVTIDENTintegral_ct{" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="evt1/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/integralFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#EVTALLHYPintegral_ct\|"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="var1∈dom(integral)∧integral∈ℙ(ℤ × ℤ) ⇸ ℤ" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.event#,|org.eventb.core.action#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.event#,|org.eventb.core.action#'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/integralFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/integralFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#EVTALLHYPintegral_ct\|"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTintegral_ct|" org.eventb.core.parentSet="/integralFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="total'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPintegral_ct|" org.eventb.core.parentSet="/integralFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#EVTIDENTintegral_ct\|" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/integralFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="var1∈ℤ ⇸ ℤ" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.invariant#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="total∈ℤ" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.invariant#+"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

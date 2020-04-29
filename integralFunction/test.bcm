@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/integralFunction/integral_ctx.bcc" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.seesContext#-"/>
+<org.eventb.core.scInternalContext name="integral_ctx">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="f_integral" org.eventb.core.predicate="integral∈(ℤ ⇸ ℤ) → ℤ∧integral=(λx⦂ℙ(ℤ×ℤ)·x=(∅ ⦂ ℙ(ℤ×ℤ)) ∣ 0)∪(λx⦂ℙ(ℤ×ℤ)·x∈ℤ ⇸ ℤ∧finite(x)∧card(x)&gt;0∧finite(dom(x)) ∣ integral(x ∖ {max(dom(x)) ↦ x(max(dom(x)))})+x(max(dom(x))))" org.eventb.core.source="/integralFunction/integral_ctx.buc|org.eventb.core.contextFile#integral_ctx|org.eventb.core.axiom#(" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="integral" org.eventb.core.source="/integralFunction/integral_ctx.buc|org.eventb.core.contextFile#integral_ctx|org.eventb.core.constant#'" org.eventb.core.type="ℙ(ℙ(ℤ×ℤ)×ℤ)"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scInvariant name="integral_cty" org.eventb.core.label="inv1" org.eventb.core.predicate="var1∈ℤ ⇸ ℤ" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.invariant#)" org.eventb.core.theorem="false"/>
+<org.eventb.core.scInvariant name="integral_ctz" org.eventb.core.label="inv2" org.eventb.core.predicate="total∈ℤ" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.invariant#+" org.eventb.core.theorem="false"/>
+<org.eventb.core.scVariable name="total" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.variable#*" org.eventb.core.type="ℤ"/>
+<org.eventb.core.scVariable name="var1" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.variable#(" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.scEvent name="integral_ct{" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.event#'">
+<org.eventb.core.scAction name="'" org.eventb.core.assignment="var1 ≔ {1 ↦ 5,2 ↦ −5,3 ↦ 5,−4 ↦ −2}" org.eventb.core.label="act1" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.event#'|org.eventb.core.action#'"/>
+<org.eventb.core.scAction name="(" org.eventb.core.assignment="total ≔ 0" org.eventb.core.label="act2" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.event#'|org.eventb.core.action#("/>
+</org.eventb.core.scEvent>
+<org.eventb.core.scEvent name="integral_ct|" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="evt1" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.event#,">
+<org.eventb.core.scAction name="'" org.eventb.core.assignment="total ≔ integral(var1)" org.eventb.core.label="act1" org.eventb.core.source="/integralFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.event#,|org.eventb.core.action#'"/>
+</org.eventb.core.scEvent>
+</org.eventb.core.scMachineFile>
